@@ -1,7 +1,9 @@
+//allows routing of files
 const router = require("express").Router();
-
+//connects a path to the store.js database file
 const store = require("../db/store");
 
+//html is requesting the notes
 router.get("/notes", (req, res) => {
     store
         .getNotes()
@@ -13,7 +15,9 @@ router.get("/notes", (req, res) => {
         })
 })
 
+//posts the notes to the body of notes.html using json. Throws 500 error if there is a routing issue
 router.post("/notes", (req, res) => {
+    console.log(req.body)
     store
         .addNote(req.body)
         .then(note => {
@@ -24,6 +28,7 @@ router.post("/notes", (req, res) => {
         })
 })
 
+//need this one explained for what's happening with params, id, and ok: true
 router.delete("/notes/:id", (req, res) => {
     store
         .removeNote(req.params.id)
