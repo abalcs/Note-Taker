@@ -17,7 +17,6 @@ router.get("/notes", (req, res) => {
 
 //posts the notes to the body of notes.html using json. Throws 500 error if there is a routing issue
 router.post("/notes", (req, res) => {
-    console.log(req.body)
     store
         .addNote(req.body)
         .then(note => {
