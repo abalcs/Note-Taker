@@ -17,10 +17,10 @@
     This app was made with JavaScript and Node.js.  It allows the user to create a create and delete notes using express and node.js
 
 ## Installation:
-    Anyone with js and node.js will be able to run this app on their text editor or terminal
+    Anyone with js and node.js will be able to run this app on their git bash or terminal
 
 ## Usage:
-    The app is used by coporate professionals that need to quickly and efficiently create and modify existing team structures
+    The app can be used by coporate professionals that need to quickly and efficiently create and modify existing team structures
     to accurately display their reporting lines.
 
 ## Contributing:
